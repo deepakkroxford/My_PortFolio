@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEEPAK KUMAR SINGH PORTFOLIO</title>
+    <meta name="description" content="This Is My Portfolio Website">
+    <meta name="keywords" content="about,java,html,css,sql">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Image/portfolio-folder.png" type="image/x-icon">
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("m4YE3SYojxIss20rH"); // Pass your public key directly as a string
+        })();
+    </script>
+</script>
+</head>
+
+<body>
+    <div class="loading-screen">
+        <h2 id="welcome-message">Welcome to My Portfolio Website</h2>
+    </div>
+
+    <!-- Nav Bar -->
+    <div id="nav-container">
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <!-- Logo on the left -->
+                    <li class="logo">
+                        <a href="#">
+                            <img src="Image/logo.png" alt="D Logo" class="logo-img" />
+                        </a>
+                    </li>
+                    <!-- Menu items on the right -->
+                    <div class="menu-items">
+                        <li><a href="#Projects">Project</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="About" class="about-section">
+        <div class="about-content">
+            <h1 class="title">
+                <i> I'm <span>Deepak Singh<br /></span>Front-End Developer.....</i>
+            </h1>
+            <p class="description">
+                <i>"Welcome to my web developer portfolio! I'm Deepak, a skilled and creative web developer with a
+                    passion
+                    for creating beautiful, responsive, and user-friendly websites."</i>
+            </p>
+            <p class="college-info">Oxford College of Engineering<br>Information Science and Engineering</p>
+            <br>
+            <!-- <blockquote class="quote">"The only way to do great work is to love what you do." - Steve Jobs</blockquote> -->
+            <blockquote class="quote">""If you don't know something, that's not a problem. But if you don't want to
+                learn, that's a problem."</blockquote>
+            <a href="resume/resume.pdf" download>
+                <button class="download-btn">Download CV</button>
+            </a>
+            <div class="social-media">
+                <span>
+                    <a href="https://www.linkedin.com/in/deepak-kumar-singh-a9991b27b/" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/deepakkroxford" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/aman.rathore.39948856/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/amansinghr8254/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="Image/IMG_3666.jpg" alt="Deepak Kumar Singh" />
+        </div>
+    </div>
+
+    <!--       Project Part Of the Portfolio  -->
+
+
+    <div id="Projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="project-box-container"> <!-- Added flex container -->
+            <div class="project-box">
+                <div class="project-image">
+                    <img src="Image/Screenshot 2024-09-29 at 23.13.53.png" alt="Project 1" />
+                </div>
+                <h3>N-Queens Visualizer</h3>
+                <p>"The N-Queens Visualizer is an interactive tool that allows users to explore the classic N-Queens problem by placing N queens on an N×N chessboard without conflicts. It visualizes the backtracking algorithm in action, enhancing understanding of algorithmic concepts in a user-friendly interface."</p>
+                <a href="https://github.com/deepakkroxford/N-Queen-Algorithm-Visualizer" target="_blank" rel="noopener noreferrer">
+                    <button class="project-btn">View Source Code</button>
+                </a>
+            </div>
+    
+            <div class="project-box">
+                <div class="project-image">
+                    <img src="Image/9b1170e1-d73f-45e7-a730-71d09e6cf746_1600x900.jpg" alt="Project 2" />
+                </div>
+                <h3>Rest Api</h3>
+                <p>"I developed a REST API using Spring Boot that facilitates seamless CRUD operations for managing data. This API provides a robust and scalable solution for applications requiring efficient data handling and interaction."</p>
+                <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener noreferrer">
+                    <button class="project-btn">View Source Code</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+
+
+    <!-- Skills Part of My Portfolio -->
+    <div id="Skills" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <div class="skill-item">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL</h3>
+                    <p>Intermediate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="Contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form id="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="occupation">Occupation</label>
+                        <input type="text" id="occupation" name="occupation" placeholder="Enter your occupation" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender" required>
+                            <option value="" disabled selected>Select your gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Not-sure">Not Prefer To Say</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+                    </div>
+    
+                    <button type="submit" class="submit-btn" onclick="sendmail()">Send Message</button>
+                </form>
+            </div>
+    
+            <!-- Optional Social Media Links -->
+            <div class="contact-social">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/deepak-kumar-singh-a9991b27b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/deepakkroxford" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/aman.rathore.39948856/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/amansinghr8254/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <section class="quick-connect">
+        <h2>Quick Connect: Call Me for Just ₹2!</h2>
+        <p>Need to discuss your project urgently? Contact me directly and let's chat! Click the button below to make a quick payment and get in touch.</p>
+        <button class="payment-button" onclick="openPaymentGateway()">Pay Now</button>
+    </section> -->
+
+
+
+    <!-- This is the footer part of my portfolio -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Deepak Kumar Singh. All Rights Reserved.</p>
+            <div class="nav-icons">
+                <a href="#" title="Home"><i class="fa-solid fa-house"></i></a>
+                <a href="#About" title="About"><i class="fa-solid fa-info-circle"></i></a>
+                <a href="#Projects" title="Projects"><i class="fa-solid fa-project-diagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
