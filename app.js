@@ -40,12 +40,6 @@ window.onload = function () {
     showMessage();
 };
 
-
-
-
-
-
-
 // Disable the submit button initially
 const submitButton = document.querySelector('.submit-btn');
 submitButton.disabled = true;

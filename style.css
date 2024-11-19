@@ -4,18 +4,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
 
-    
-    body {
-        font-family: 'Roboto', sans-serif; /* Apply the chosen font to the body */
-        /* background: linear-gradient(135deg, #7b8cc9, #7091E6, #8697C4, #ADBBDA, #EDE8F5); */
-        background: white;
-    }
-    
-   
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Apply the chosen font to the body */
+    /* background: linear-gradient(135deg, #7b8cc9, #7091E6, #8697C4, #ADBBDA, #EDE8F5); */
+    background: white;
+}
 
 
 /* Loading Screen Styles */
@@ -26,35 +26,52 @@ html {
     width: 100%;
     height: 100%;
     background-color: black;
-    z-index: 9999; /* Stays on top of all content */
-    display: flex; /* Center the loading text */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    opacity: 1; /* Start fully visible */
-    transition: opacity 1s ease, visibility 1s ease; /* Smooth fade out */
+    z-index: 9999;
+    /* Stays on top of all content */
+    display: flex;
+    /* Center the loading text */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    opacity: 1;
+    /* Start fully visible */
+    transition: opacity 1s ease, visibility 1s ease;
+    /* Smooth fade out */
 }
 
 .loading-screen.hidden {
-    opacity: 0; /* Fade out */
-    visibility: hidden; /* Hide after fading out */
+    opacity: 0;
+    /* Fade out */
+    visibility: hidden;
+    /* Hide after fading out */
 }
 
 /* Welcome Message Styles */
 .loading-screen h2 {
-    color: white; /* Text color */
-    font-size: 24px; /* Adjust size as needed */
-    font-family: 'Roboto', sans-serif; /* Match the rest of your site */
-    animation: fadeIn 1s ease; /* Fade-in animation for text */
-    text-align: center; /* Center the text */
-    margin: 0; /* Remove default margin */
+    color: white;
+    /* Text color */
+    font-size: 24px;
+    /* Adjust size as needed */
+    font-family: 'Roboto', sans-serif;
+    /* Match the rest of your site */
+    animation: fadeIn 1s ease;
+    /* Fade-in animation for text */
+    text-align: center;
+    /* Center the text */
+    margin: 0;
+    /* Remove default margin */
 }
 
 @keyframes fadeIn {
     0% {
-        opacity: 0; /* Start transparent */
+        opacity: 0;
+        /* Start transparent */
     }
+
     100% {
-        opacity: 1; /* End fully visible */
+        opacity: 1;
+        /* End fully visible */
     }
 }
 
@@ -78,9 +95,11 @@ nav ul {
     list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Create space between logo and menu */
+    justify-content: space-between;
+    /* Create space between logo and menu */
     margin: 0;
-    padding: 0 20px; /* Padding for some spacing on the sides */
+    padding: 0 20px;
+    /* Padding for some spacing on the sides */
 }
 
 /* Individual list item styling */
@@ -95,33 +114,42 @@ nav ul li a {
     font-size: 18px;
     padding: 8px 16px;
     transition: transform 0.3s ease;
-    position: relative; /* For positioning the underline */
+    position: relative;
+    /* For positioning the underline */
 }
 
 /* Hover effect for the links */
 nav ul li a:hover {
     border-radius: 5px;
-    transform: scale(1.1); /* Increase size on hover */
+    transform: scale(1.1);
+    /* Increase size on hover */
 }
 
 nav ul li a::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -5px; /* Position the underline below the text */
-    height: 2px; /* Thickness of the underline */
-    width: 100%; /* Full width of the text */
-    background-color: transparent; /* Initial state - transparent */
-    transition: background-color 0.3s ease; /* Smooth transition for underline */
+    bottom: -5px;
+    /* Position the underline below the text */
+    height: 2px;
+    /* Thickness of the underline */
+    width: 100%;
+    /* Full width of the text */
+    background-color: transparent;
+    /* Initial state - transparent */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for underline */
 }
 
 nav ul li a:hover::after {
-    background-color: rgb(19, 4, 4); /* Color of the underline on hover */
+    background-color: rgb(19, 4, 4);
+    /* Color of the underline on hover */
 }
 
 /* Styling for the logo */
 .logo {
-    margin-right: auto; /* Automatically push the logo to the left */
+    margin-right: auto;
+    /* Automatically push the logo to the left */
 }
 
 .logo-img {
@@ -131,30 +159,38 @@ nav ul li a:hover::after {
 
 /* Styling for the menu items */
 .menu-items {
-    display: flex; /* Align the menu items horizontally */
-    justify-content: flex-end; /* Align the items to the right */
-    gap: 20px; /* Space between menu items */
+    display: flex;
+    /* Align the menu items horizontally */
+    justify-content: flex-end;
+    /* Align the items to the right */
+    gap: 20px;
+    /* Space between menu items */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: row; /* Maintain horizontal layout */
-        justify-content: flex-start; /* Align items to the left */
+        flex-direction: row;
+        /* Maintain horizontal layout */
+        justify-content: flex-start;
+        /* Align items to the left */
     }
 
     nav ul li {
-        display: inline; /* Ensure items remain inline */
+        display: inline;
+        /* Ensure items remain inline */
     }
 
     /* Hide Skills item */
     nav ul li:nth-child(4) {
-        display: none; /* Hide Skills item on small screens */
+        display: none;
+        /* Hide Skills item on small screens */
     }
-    
+
     /* Adjust menu item spacing */
     nav ul li {
-        margin-right: 15px; /* Adjust margin for smaller screens */
+        margin-right: 15px;
+        /* Adjust margin for smaller screens */
     }
 }
 
@@ -166,8 +202,8 @@ nav ul li a:hover::after {
     display: flex;
     align-items: center;
     padding: 100px 20px;
-   
-    
+
+
 }
 
 .about-content {
@@ -176,8 +212,10 @@ nav ul li a:hover::after {
 }
 
 .title {
-    font-size: 32px; /* Increase font size */
-    margin-bottom: 10px; /* Space below title */
+    font-size: 32px;
+    /* Increase font size */
+    margin-bottom: 10px;
+    /* Space below title */
     transition: transform 0.3s ease;
 }
 
@@ -187,7 +225,8 @@ nav ul li a:hover::after {
 
 .description {
     font-size: 18px;
-    margin: 10px 0 20px; /* Space above and below */
+    margin: 10px 0 20px;
+    /* Space above and below */
 }
 
 /* Image styling */
@@ -357,47 +396,67 @@ nav ul li a:hover::after {
 
 /* Base styles for input fields and textarea */
 .form-group {
-    margin-bottom: 20px; /* Space between form groups */
+    margin-bottom: 20px;
+    /* Space between form groups */
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
-    width: 100%; /* Full width */
-    padding: 10px; /* Padding inside the fields */
-    border: 2px solid transparent; /* Initial border */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    transition: border 0.3s ease; /* Transition for border change */
-    background-color: #f9f9f9; /* Light background color */
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    /* Padding inside the fields */
+    border: 2px solid transparent;
+    /* Initial border */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 16px;
+    /* Font size */
+    transition: border 0.3s ease;
+    /* Transition for border change */
+    background-color: #f9f9f9;
+    /* Light background color */
 }
 
 /* Gradient border on focus */
-.form-group input:focus, 
+.form-group input:focus,
 .form-group textarea:focus {
-    outline: none; /* Remove default outline */
-    border-image: linear-gradient(to right, #4a90e2, #09ce48) 1; /* Gradient border */
-    border-style: solid; /* Apply solid border style */
+    outline: none;
+    /* Remove default outline */
+    border-image: linear-gradient(to right, #4a90e2, #09ce48) 1;
+    /* Gradient border */
+    border-style: solid;
+    /* Apply solid border style */
 }
 
 /* Optional: Change background color on focus */
-.form-group input:focus, 
+.form-group input:focus,
 .form-group textarea:focus {
-    background-color: #fff; /* Change background color */
-    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Add shadow for effect */
+    background-color: #fff;
+    /* Change background color */
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    /* Add shadow for effect */
 }
+
 /* Styles for the Contact Me heading */
 .contact-section h2 {
-    font-size: 28px; /* Font size */
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
-    position: relative; /* Allow positioning */
-    display: inline-block; /* Make the element inline for better control */
+    font-size: 28px;
+    /* Font size */
+    transition: transform 0.3s ease, color 0.3s ease;
+    /* Smooth transition */
+    position: relative;
+    /* Allow positioning */
+    display: inline-block;
+    /* Make the element inline for better control */
 }
 
 /* Pop-out effect on hover */
 .contact-section h2:hover {
-    transform: translateY(-5px); /* Move the heading up */
-    color: #ed90b8; /* Change color on hover */
-    
+    transform: translateY(-5px);
+    /* Move the heading up */
+    color: #ed90b8;
+    /* Change color on hover */
+
 }
 
 /* Social media icons */
@@ -420,31 +479,46 @@ nav ul li a:hover::after {
 .social-icons a {
     font-size: 30px;
     color: #555;
-    transition: color 0.3s ease, transform 0.3s ease; /* Added transition for scaling */
-    display: inline-block; /* Ensures transform works properly */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Added transition for scaling */
+    display: inline-block;
+    /* Ensures transform works properly */
 }
 
 /* Pop-up animation on hover */
 .social-icons a:hover {
-    color: #f30606; /* Change color on hover */
-    transform: scale(1.2); /* Scale effect */
+    color: #f30606;
+    /* Change color on hover */
+    transform: scale(1.2);
+    /* Scale effect */
 }
+
 /* Additional Styling for Gender Dropdown */
 .form-group select {
-    width: 100%; /* Full width */
-    padding: 10px; /* Padding inside the select */
-    border: 1px solid #ccc; /* Border color */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    background-color: #fff; /* Background color */
-    color: #555; /* Text color */
-    transition: border-color 0.3s ease; /* Transition for border color */
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    /* Padding inside the select */
+    border: 1px solid #ccc;
+    /* Border color */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 16px;
+    /* Font size */
+    background-color: #fff;
+    /* Background color */
+    color: #555;
+    /* Text color */
+    transition: border-color 0.3s ease;
+    /* Transition for border color */
 }
 
 /* Focus effect for the select dropdown */
 .form-group select:focus {
-    border-color: #4a90e2; /* Focus border color */
-    outline: none; /* Remove default outline */
+    border-color: #4a90e2;
+    /* Focus border color */
+    outline: none;
+    /* Remove default outline */
 }
 
 /* Responsive design */
@@ -477,51 +551,71 @@ nav ul li a:hover::after {
 
 .projects-section {
     padding: 50px 20px;
-    text-align: center; /* Center the title text */
-    background-color: #ffffff; 
+    text-align: center;
+    /* Center the title text */
+    background-color: #ffffff;
 }
 
 .projects-section h2 {
-    font-size: 2em; /* Adjust font size as needed */
-    margin-bottom: 20px; /* Space below the title */
-    color: #333; /* Color of the title */
+    font-size: 2em;
+    /* Adjust font size as needed */
+    margin-bottom: 20px;
+    /* Space below the title */
+    color: #333;
+    /* Color of the title */
 }
 
 /* Use flexbox for the project boxes */
 .project-box-container {
     display: flex;
-    justify-content: center; /* Center the boxes */
-    flex-wrap: wrap; /* Allow wrapping of boxes on smaller screens */
+    justify-content: center;
+    /* Center the boxes */
+    flex-wrap: wrap;
+    /* Allow wrapping of boxes on smaller screens */
 }
 
 .project-box {
-    display: flex; /* Enable flexbox for alignment */
-    flex-direction: column; /* Arrange children vertically */
-    justify-content: space-between; /* Evenly space items */
-    width: 30%; /* Adjust width as needed */
-    margin: 15px; /* Space between boxes */
-    border: 1px solid #ccc; /* Box border */
-    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    /* Enable flexbox for alignment */
+    flex-direction: column;
+    /* Arrange children vertically */
+    justify-content: space-between;
+    /* Evenly space items */
+    width: 30%;
+    /* Adjust width as needed */
+    margin: 15px;
+    /* Space between boxes */
+    border: 1px solid #ccc;
+    /* Box border */
+    border-radius: 10px;
+    /* Rounded corners */
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
     transition: transform 0.3s ease;
-    min-height: 350px; /* Set a minimum height for uniformity */
+    min-height: 350px;
+    /* Set a minimum height for uniformity */
 }
 
 .project-box:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
+    transform: translateY(-5px);
+    /* Lift effect on hover */
 }
 
 .project-image img {
     width: 100%;
-    height: auto; /* Responsive image */
-    border-radius: 10px; /* Round corners */
+    height: auto;
+    /* Responsive image */
+    border-radius: 10px;
+    /* Round corners */
 }
 
 .project-btn {
-    margin-top: auto; /* Push the button to the bottom */
+    margin-top: auto;
+    /* Push the button to the bottom */
     padding: 10px 20px;
-    background-color: #4a90e2; /* Button color */
+    background-color: #4a90e2;
+    /* Button color */
     color: white;
     border: none;
     border-radius: 5px;
@@ -530,45 +624,36 @@ nav ul li a:hover::after {
 }
 
 .project-btn:hover {
-    background-color: #2a353f; /* Darker shade on hover */
+    background-color: #2a353f;
+    /* Darker shade on hover */
 }
 
 .project-box p {
-    height: 100px; /* Set a fixed height for all project descriptions */
-    overflow: hidden; /* Hide any overflow text */
-    text-overflow: ellipsis; /* Add ellipsis (...) at the end if text overflows */
-    margin: 10px 0; /* Space above and below the paragraph */
-    display: -webkit-box; /* For multiline ellipsis */
-    -webkit-box-orient: vertical; /* For multiline ellipsis */
-    -webkit-line-clamp: 3; /* Show up to 3 lines */
+    height: 100px;
+    /* Set a fixed height for all project descriptions */
+    overflow: hidden;
+    /* Hide any overflow text */
+    text-overflow: ellipsis;
+    /* Add ellipsis (...) at the end if text overflows */
+    margin: 10px 0;
+    /* Space above and below the paragraph */
+    display: -webkit-box;
+    /* For multiline ellipsis */
+    -webkit-box-orient: vertical;
+    /* For multiline ellipsis */
+    -webkit-line-clamp: 3;
+    /* Show up to 3 lines */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .project-box {
-        width: 90%; /* Full width on smaller screens */
-        margin: 10px 0; /* Margin for top and bottom */
+        width: 90%;
+        /* Full width on smaller screens */
+        margin: 10px 0;
+        /* Margin for top and bottom */
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -595,27 +680,36 @@ nav ul li a:hover::after {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    width: 80%; /* Width of the box */
+    width: 80%;
+    /* Width of the box */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Space between items */
+    justify-content: space-around;
+    /* Space between items */
 }
 
 .skill-item {
     text-align: center;
-    flex: 1 1 150px; /* Flexible items with a base width */
-    margin: 10px; /* Space around each skill item */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for smooth effect */
+    flex: 1 1 150px;
+    /* Flexible items with a base width */
+    margin: 10px;
+    /* Space around each skill item */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transition for smooth effect */
 }
 
 .skill-item:hover {
-    transform: translateY(-10px); /* Move up on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    transform: translateY(-10px);
+    /* Move up on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    /* Increase shadow on hover */
 }
 
 .skill-item i {
-    font-size: 3em; /* Icon size */
-    color: #4CAF50; /* Icon color */
+    font-size: 3em;
+    /* Icon size */
+    color: #4CAF50;
+    /* Icon color */
 }
 
 .skill-item h3 {
@@ -625,36 +719,52 @@ nav ul li a:hover::after {
 
 .skill-item p {
     font-size: 1em;
-    color: #666; /* Text color */
+    color: #666;
+    /* Text color */
 }
 
 
 /* footer section  */
 .footer {
-    background-color: #ffffff; /* Dark background for contrast */
-    color: rgb(0, 0, 0); /* White text color */
-    padding: 20px 0; /* Spacing */
-    text-align: center; /* Center-align text */
-    position: relative; /* Positioning context for animations */
-    overflow: hidden; /* Prevent overflow */
+    background-color: #ffffff;
+    /* Dark background for contrast */
+    color: rgb(0, 0, 0);
+    /* White text color */
+    padding: 20px 0;
+    /* Spacing */
+    text-align: center;
+    /* Center-align text */
+    position: relative;
+    /* Positioning context for animations */
+    overflow: hidden;
+    /* Prevent overflow */
 }
 
 .footer-content {
-    max-width: 1200px; /* Max width for content */
-    margin: 0 auto; /* Center the content */
+    max-width: 1200px;
+    /* Max width for content */
+    margin: 0 auto;
+    /* Center the content */
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align items */
-    opacity: 0; /* Initial opacity for animation */
-    transform: translateY(20px); /* Initial position for animation */
-    animation: fadeInUp 0.6s forwards; /* Animation on load */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center align items */
+    opacity: 0;
+    /* Initial opacity for animation */
+    transform: translateY(20px);
+    /* Initial position for animation */
+    animation: fadeInUp 0.6s forwards;
+    /* Animation on load */
 }
 
 /* Animation keyframes */
 @keyframes fadeInUp {
     to {
-        opacity: 1; /* Final opacity */
-        transform: translateY(0); /* Final position */
+        opacity: 1;
+        /* Final opacity */
+        transform: translateY(0);
+        /* Final position */
     }
 }
 
@@ -664,10 +774,12 @@ nav ul li a:hover::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, #9e9898, #ffffff); /* Gradient background */
+    background: linear-gradient(to right, #9e9898, #ffffff);
+    /* Gradient background */
     color: rgb(0, 0, 0);
     text-align: center;
-    transition: background 0.3s ease; /* Smooth background color transition */
+    transition: background 0.3s ease;
+    /* Smooth background color transition */
 }
 
 
@@ -675,12 +787,18 @@ nav ul li a:hover::after {
 .footer-content p {
     margin: 0;
     font-size: 16px;
-    animation: fadeIn 1s ease-in-out; /* Text fade-in effect */
+    animation: fadeIn 1s ease-in-out;
+    /* Text fade-in effect */
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .nav-icons {
@@ -698,7 +816,8 @@ nav ul li a:hover::after {
 }
 
 .nav-icons a::after {
-    content: attr(title); /* Display title on hover */
+    content: attr(title);
+    /* Display title on hover */
     position: absolute;
     bottom: -30px;
     left: 50%;
@@ -715,81 +834,101 @@ nav ul li a:hover::after {
 
 .nav-icons a:hover::after {
     opacity: 1;
-    bottom: -40px; /* Moves text up when hovered */
+    bottom: -40px;
+    /* Moves text up when hovered */
 }
 
 .nav-icons a:hover {
-    color: #ff0000; /* Gold color on hover */
-    transform: scale(1.3); /* Slightly larger on hover */
+    color: #ff0000;
+    /* Gold color on hover */
+    transform: scale(1.3);
+    /* Slightly larger on hover */
 }
 
 .nav-icons a:hover i {
-    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.7)); /* Glow effect */
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.7));
+    /* Glow effect */
 }
-
-
-
-
-
-
 
 
 /* Base styles for input fields and textarea */
 .form-group {
-    position: relative; /* Position for absolute child */
-    margin-bottom: 20px; /* Space between form groups */
+    position: relative;
+    /* Position for absolute child */
+    margin-bottom: 20px;
+    /* Space between form groups */
 }
 
 /* Styling for input fields, textareas, and select dropdowns */
 .form-group input,
 .form-group textarea,
 .form-group select {
-    width: 100%; /* Full width */
-    padding: 10px; /* Padding inside the fields */
-    border: 2px solid transparent; /* Initial border */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    background-color: #f9f9f9; /* Light background color */
-    transition: border 0.3s ease; /* Transition for border change */
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    /* Padding inside the fields */
+    border: 2px solid transparent;
+    /* Initial border */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 16px;
+    /* Font size */
+    background-color: #f9f9f9;
+    /* Light background color */
+    transition: border 0.3s ease;
+    /* Transition for border change */
 }
 
 /* Gradient border on focus */
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-    outline: none; /* Remove default outline */
-    border-image: linear-gradient(to right, #4a90e2, #09ce48) 1; /* Gradient border */
-    border-style: solid; /* Apply solid border style */
+    outline: none;
+    /* Remove default outline */
+    border-image: linear-gradient(to right, #4a90e2, #09ce48) 1;
+    /* Gradient border */
+    border-style: solid;
+    /* Apply solid border style */
 }
 
 /* Optional: Change background color on focus */
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-    background-color: #eedfdf; /* Change background color */
-    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Add shadow for effect */
+    background-color: #eedfdf;
+    /* Change background color */
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    /* Add shadow for effect */
 }
 
 
 
 .quick-connect {
-    background-color: #EDE8F5; /* Light background for contrast */
+    background-color: #EDE8F5;
+    /* Light background for contrast */
     padding: 20px;
-    border-radius: 8px; /* Rounded corners */
-    text-align: center; /* Center text */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin: 20px 0; /* Margin for spacing */
+    border-radius: 8px;
+    /* Rounded corners */
+    text-align: center;
+    /* Center text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    margin: 20px 0;
+    /* Margin for spacing */
 }
 
 .quick-connect h2 {
-    color: #3D52A0; /* Heading color */
-    font-size: 24px; /* Font size */
-    margin-bottom: 10px; /* Space below heading */
+    color: #3D52A0;
+    /* Heading color */
+    font-size: 24px;
+    /* Font size */
+    margin-bottom: 10px;
+    /* Space below heading */
 }
 
 .quick-connect p {
-    color: #372b2b; /* Paragraph color */
-    margin-bottom: 15px; /* Space below paragraph */
+    color: #372b2b;
+    /* Paragraph color */
+    margin-bottom: 15px;
+    /* Space below paragraph */
 }
-
-
